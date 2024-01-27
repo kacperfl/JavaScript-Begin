@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+
+        .div-klein {
+            background-color: cadetblue;
+            flex: 1;
+            margin: 20px;
+            padding: 10px;
+            
+        }
+
+        .div-groot {
+            background-color: lightcoral;
+            flex: 2; 
+            margin: 10px;
+            padding: 10px;
+            
+        }
+
+        @media only screen and (max-width: 780px) {
+            .div-klein {
+                background-color: green;
+                flex: 1;
+                margin: 10px;
+                padding: 10px;
+                
+            }
+
+            .div-groot {
+                background-color: lightcoral;
+                flex: 1; /* Maak het vierde blokje weer dezelfde breedte als de andere bij kleinere schermen */
+                margin: 10px;
+                padding: 10px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="div-klein" >Eerste blokje</div>
+        <div class="div-klein">Tweede blokje</div>
+        <div class="div-klein">Derde blokje</div>
+
+        <div class="div-groot">Vierde blokje</div>
+
+        <div class="div-klein">Vijfde blokje</div>
+        <div class="div-klein">Zesde blokje</div>
+        <div class="div-klein">Zevende blokje</div>
+    </div>
+</body>
+</html>
